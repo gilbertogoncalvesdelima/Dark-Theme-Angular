@@ -2,9 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  template: `<app-header></app-header><app-footer></app-footer>
+    <router-outlet></router-outlet>`,
 })
-export class AppComponent {
-  title = 'dark-theme';
-}
+export class AppComponent {}
